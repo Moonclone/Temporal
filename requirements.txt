@@ -1,0 +1,41 @@
+﻿# Agent Frameworks
+crewai==1.1.0
+crewai[tools]
+langchain==0.1.20
+langchain-community==0.0.38
+langchain-openai==0.1.7
+langgraph==0.0.53
+
+# LLM
+ollama==0.1.7
+groq==0.4.2
+
+# Kubernetes
+kubernetes==29.0.0
+openshift==0.13.2
+
+# Code Analysis
+gitpython==3.1.42
+pydriller==2.5
+
+# Data Science
+numpy==1.26.4
+pandas==2.2.1
+networkx==3.2.1
+scikit-learn==1.4.1.post1
+
+# Database
+psycopg2-binary==2.9.9
+redis==5.0.3
+neo4j==5.18.0
+
+# API Framework
+fastapi==0.110.0
+uvicorn==0.28.0
+pydantic==2.6.4
+
+# Utilities
+python-dotenv==1.0.1
+requests==2.31.0
+aiohttp==3.9.3
+pyyaml==6.0.1

@@ -1,0 +1,137 @@
+{
+  "generated_at": "2025-10-26T01:08:10.919589",
+  "predictions": {
+    "complexity_growth": [
+      {
+        "filename": "compat.py",
+        "current_complexity": 3,
+        "predicted_complexity": 78,
+        "growth_rate": 2500.0,
+        "risk_level": "\ud83d\udd34 CRITICAL",
+        "months_ahead": 6
+      },
+      {
+        "filename": "util.py",
+        "current_complexity": 51,
+        "predicted_complexity": 196,
+        "growth_rate": 284.3,
+        "risk_level": "\ud83d\udd34 CRITICAL",
+        "months_ahead": 6
+      },
+      {
+        "filename": "cache.py",
+        "current_complexity": 12,
+        "predicted_complexity": 23,
+        "growth_rate": 93.8,
+        "risk_level": "\ud83d\udfe0 HIGH",
+        "months_ahead": 6
+      },
+      {
+        "filename": "exceptions.py",
+        "current_complexity": 18,
+        "predicted_complexity": 25,
+        "growth_rate": 43.3,
+        "risk_level": "\ud83d\udfe1 MEDIUM",
+        "months_ahead": 6
+      },
+      {
+        "filename": "__init__.py",
+        "current_complexity": 37,
+        "predicted_complexity": 50,
+        "growth_rate": 37.0,
+        "risk_level": "\ud83d\udfe1 MEDIUM",
+        "months_ahead": 6
+      }
+    ],
+    "bug_probability": [
+      {
+        "filename": "__init__.py",
+        "bug_probability": 83.8,
+        "total_changes": 65,
+        "small_change_ratio": 46.2,
+        "recommendation": "URGENT: Schedule immediate code review and refactoring"
+      },
+      {
+        "filename": "__init__.cpython-312.pyc",
+        "bug_probability": 70.0,
+        "total_changes": 58,
+        "small_change_ratio": 100.0,
+        "recommendation": "HIGH PRIORITY: Add comprehensive tests and monitoring"
+      },
+      {
+        "filename": "wheel.cpython-312.pyc",
+        "bug_probability": 65.0,
+        "total_changes": 7,
+        "small_change_ratio": 100.0,
+        "recommendation": "HIGH PRIORITY: Add comprehensive tests and monitoring"
+      },
+      {
+        "filename": "wheel.py",
+        "bug_probability": 65.0,
+        "total_changes": 7,
+        "small_change_ratio": 0.0,
+        "recommendation": "HIGH PRIORITY: Add comprehensive tests and monitoring"
+      },
+      {
+        "filename": "__main__.cpython-312.pyc",
+        "bug_probability": 60.0,
+        "total_changes": 6,
+        "small_change_ratio": 100.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "exceptions.cpython-312.pyc",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 100.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "base.cpython-312.pyc",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 100.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "base.py",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 0.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "exceptions.py",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 0.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "compat.cpython-312.pyc",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 100.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "compat.py",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 0.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      },
+      {
+        "filename": "__init__.cpython-313.pyc",
+        "bug_probability": 55.0,
+        "total_changes": 5,
+        "small_change_ratio": 100.0,
+        "recommendation": "MODERATE: Increase test coverage"
+      }
+    ]
+  },
+  "summary": {
+    "files_with_predicted_growth": 5,
+    "high_bug_risk_files": 4
+  }
+}

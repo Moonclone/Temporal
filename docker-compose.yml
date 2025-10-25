@@ -1,0 +1,43 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: chronos
+      POSTGRES_USER: chronos
+      POSTGRES_PASSWORD: chronos_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+  neo4j:
+    image: neo4j:5-community
+    ports:
+      - "7474:7474" # Web UI
+      - "7687:7687" # Bolt
+    environment:
+      NEO4J_AUTH: neo4j/chronos_password
+    volumes:
+      - neo4j_data:/data
+  trivy:
+    image: aquasec/trivy:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # to access local images
+      - ./trivy-cache:/root/.cache/trivy # cache for faster scans
+    entrypoint: ["sleep", "infinity"]
+  trivy-service:
+    build: ./agents/trivy-service
+    depends_on:
+      - postgres
+      - trivy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "8001:8000"
+volumes:
+  postgres_data:
+  neo4j_data:
